@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const imageUrl = "https://example.com/image.jpg"; // Replace with the actual image URL
+    const imageUrl = "https://arweave.net/fQdZjoDxvChU1R4NJ4miTcLbLJQq5Lbf3WJLCU6evKI"; // Replace with the actual image URL
     const transformedImageUrl = applyTransformations(imageUrl);
 
     const transformedLinkElement = document.getElementById("transformedLink");
