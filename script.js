@@ -10,6 +10,9 @@ function applyTransformations(url) {
     // Add your transformation logic here
     // For example, you can add query parameters to the URL
     //const transformedUrl = url + "?width=300&height=200";
-    const transformedUrl = url;
+    const cloudfrontUrl = "//d23nwyc0vr15d5.cloudfront.net/";
+    const modifiedImageUrl = new URL(imageUrl);
+    const modifiedPath = modifiedImageUrl.pathname.replace(/\//g, "_");
+    const transformedUrl = modifiedImageUrl.protocol + cloudfrontUrl + modifiedImageUrl.hostname + modifiedPath + '.png';
     return transformedUrl;
 }
