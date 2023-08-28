@@ -16,5 +16,6 @@ function applyTransformations(url) {
     const modifiedPath = encodeURI(modifiedImageUrl.hostname + modifiedImageUrl.pathname);
     //const modifiedPath = modifiedImageUrl.pathname.replace(/\//g, "_");
     const transformedUrl = modifiedImageUrl.protocol + cloudfrontUrl + modifiedPath;
+    console.log(transformedUrl);
     return transformedUrl;
 }
