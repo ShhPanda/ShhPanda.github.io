@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     //const imageUrl = "https://arweave.net/fQdZjoDxvChU1R4NJ4miTcLbLJQq5Lbf3WJLCU6evKI";
     const cloudfrontUrl = "//d23nwyc0vr15d5.cloudfront.net/";
-    const imageUrl = "https://metadata.degods.com/g/9599-dead.png?width=100&height=100"; // Replace with the actual image URL
+    const imageUrl = "https://metadata.degods.com/g/4947.png?width=100&height=100"; // Replace with the actual image URL
     const modifiedImageUrl = new URL(imageUrl);
     const finalString = modifiedImageUrl.protocol + cloudfrontUrl 
         + modifiedImageUrl.hostname + modifiedImageUrl.pathname + encodeURIComponent(modifiedImageUrl.search);
