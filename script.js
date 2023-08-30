@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const imageUrl = "https://metadata.degods.com/g/4947.png?width=100&height=100"; // Replace with the actual image URL
     const modifiedImageUrl = new URL(imageUrl);
     const finalString = modifiedImageUrl.protocol + cloudfrontUrl 
-        + modifiedImageUrl.hostname + modifiedImageUrl.pathname + encodeURIComponent(modifiedImageUrl.search);
+        + modifiedImageUrl.hostname + modifiedImageUrl.pathname + encodeURIComponent(encodeURIComponent(modifiedImageUrl.search));
     console.log(finalString);
 
     const transformedLinkElement = document.getElementById("transformedLink");
