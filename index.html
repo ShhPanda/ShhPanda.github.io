@@ -34,9 +34,6 @@
 </head>
 
 <body>
-    <div id="transformedLink"></div>
-    <img id="transformedImage" src="#" alt="Transformed Image">
-
     <!-- Add a basic button -->
     <button id="trackButton">Track Button Click</button>
 
@@ -44,6 +41,7 @@
         // Event listener for the button click
         document.getElementById('trackButton').addEventListener('click', function () {
             // Track the button click event using Heap Analytics
+            console.log('Button Clicked');
             heap.track('Button Clicked');
 
             // You can add additional custom logic here if needed
