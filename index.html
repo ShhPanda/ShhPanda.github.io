@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Cloudfront Image</title>
+    <script type="text/javascript">
+        window.heap = window.heap || [];
+        heap.load = function (e, t) {
+            window.heap.appid = e, window.heap.config = t = t || {};
+            var r = document.createElement("script");
+            r.type = "text/javascript", r.async = !0, r.src = "https://cdn.heapanalytics.com/js/heap-" + e + ".js";
+            var a = document.getElementsByTagName("script")[0];
+            a.parentNode.insertBefore(r, a);
+            for (var n = function (e) {
+                    return function () {
+                        heap.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+                    }
+                }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify", "resetIdentity", "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"], o = 0; o < p.length; o++) heap[p[o]] = n(p[o]);
+        };
+        heap.load("3751257715");
+    </script>
 </head>
+
 <body>
     <div id="transformedLink"></div>
     <img id="transformedImage" src="#" alt="Transformed Image">
+
+    <!-- Add a basic button -->
+    <button id="trackButton">Track Button Click</button>
+
     <script src="script.js"></script>
+
+    <script type="text/javascript">
+        // Event listener for the button click
+        document.getElementById('trackButton').addEventListener('click', function () {
+            // Track the button click event using Heap Analytics
+            heap.track('Button Clicked');
+
+            // You can add additional custom logic here if needed
+        });
+    </script>
 </body>
+
 </html>
